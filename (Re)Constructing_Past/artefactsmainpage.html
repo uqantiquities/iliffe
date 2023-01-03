@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+	<title></title>
+</head>
+<body></body>
+</html>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<style type="text/css">body,h1 {font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif}
+h1 {letter-spacing: 2px; color: #6997AD}
+body {background-color: #E8E8E5; color: #E8E8E5}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px"><!-- Header -->
+<header class="w3-panel w3-center w3-opacity" style="padding:8px 8px">
+<h1 class="w3-large">Select a Photograph to Explore</h1>
+</header>
+<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+
+<div class="w3-row-padding">
+<div class="w3-half"><a href="students.html"><img class="w3-click-opacity" src="UQFL514_0037.jpg" style="width:100%" /></a> <a href="soldiers.html"><img class="w3-click-opacity" src="UQFL514_0031.jpg" style="width:100%" /></a></div>
+
+<div class="w3-half"><a href="courtyard.html"><img class="w3-click-opacity" src="UQFL514_0013.jpg" style="width:100%" /></a> <a href="stand.html"><img class="w3-click-opacity" src="UQFL514_0011.jpg" style="width:100%" /></a></div>
+</div>
+<!-- Modal for full size images on click--></div>
+
+<div class="w3-modal w3-black" id="modal01" onclick="this.style.display='none'">
+<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64" color="#BC917D"><img class="w3-image" id="img01" />
+<p class="Gill Sans MT Regular" id="caption"></p>
+</div>
+</div>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+</script>
